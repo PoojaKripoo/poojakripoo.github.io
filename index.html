@@ -935,44 +935,151 @@ footer {
         flex-wrap: wrap;
     }
 }
-    /* AI CASE STUDY IMAGE & TEXT LAYOUT */
+
+/* AI CASE STUDY DESIGN */
+
+.ai-case-study {
+    background: var(--cream);
+}
 
 .ai-case-grid {
     display: grid;
-    grid-template-columns: 0.85fr 1.15fr;
-    gap: 25px;
-    align-items: start;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 35px;
+    align-items: center;
+    margin-top: 25px;
 }
 
 .ai-case-visual {
-    padding: 10px;
-    max-width: 100%;
+    background: #fff;
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px #3b25190d;
 }
 
 .ai-case-visual img {
     width: 100%;
-    height: 380px;
+    height: 390px;
     object-fit: contain;
     display: block;
-    background: #fff;
     border-radius: 5px;
 }
 
-.ai-case-content {
-    padding: 25px;
-    height: fit-content;
+.ai-case-caption {
+    font-size: 11px;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-top: 12px;
 }
 
-@media(max-width: 600px) {
+.ai-case-content {
+    background: #fffaf5;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 32px;
+    box-shadow: 0 10px 30px #3b25190d;
+}
+
+.ai-case-content h3 {
+    font: 700 27px 'Playfair Display';
+    margin: 14px 0;
+    line-height: 1.3;
+}
+
+.ai-case-content > p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: var(--muted);
+    margin-bottom: 20px;
+}
+
+.ai-case-results {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.ai-case-result {
+    background: #f4e6da;
+    border: 1px solid #ead7c7;
+    border-radius: 7px;
+    padding: 17px 12px;
+    text-align: center;
+}
+
+.ai-case-result strong {
+    display: block;
+    color: var(--gold);
+    font: 700 27px 'Playfair Display';
+    margin-bottom: 7px;
+}
+
+.ai-case-result span {
+    display: block;
+    font-size: 10px;
+    line-height: 1.5;
+    color: var(--brown);
+}
+
+.ai-case-content ul {
+    padding-left: 20px;
+    margin: 12px 0 22px;
+}
+
+.ai-case-content li {
+    font-size: 12px;
+    line-height: 1.8;
+    color: var(--muted);
+    padding-left: 4px;
+    margin-bottom: 5px;
+}
+
+.ai-case-note {
+    background: #f4e6da;
+    border-left: 3px solid var(--gold);
+    padding: 17px 20px;
+    font-size: 12px;
+    line-height: 1.8;
+    color: var(--brown);
+    margin: 22px 0;
+}
+
+.ai-case-content .case-tags {
+    margin-top: 20px;
+}
+
+@media(max-width: 850px) {
     .ai-case-grid {
         grid-template-columns: 1fr;
+        gap: 22px;
     }
 
     .ai-case-visual img {
         height: auto;
-        max-height: 380px;
+        max-height: 450px;
     }
 }
+
+@media(max-width: 600px) {
+    .ai-case-content {
+        padding: 22px;
+    }
+
+    .ai-case-content h3 {
+        font-size: 23px;
+    }
+
+    .ai-case-results {
+        grid-template-columns: 1fr;
+    }
+
+    .ai-case-result {
+        text-align: left;
+    }
+}
+
 </style>
 </head>
 
@@ -1569,7 +1676,7 @@ footer {
                 Understanding search intent, keyword opportunities
                 and competitor research for better SEO planning.
             </p>
-            <a href="mailto:pjvm7065@gmail.com?subject=SEO%20Article">
+            <a href="mailto:pooja.kripoo@gmail.com?subject=SEO%20Article">
                 REQUEST ARTICLE ↗
             </a>
         </article>
