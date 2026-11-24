@@ -200,7 +200,53 @@ section {
     border-bottom: 1px solid var(--gold);
     padding-bottom: 5px;
 }
+/* HERO CTA BUTTONS */
 
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+.hero-actions .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 20px;
+    border: 1px solid var(--brown);
+    transition: .3s ease;
+}
+
+.hero-actions .btn-whatsapp {
+    background: #e9f6ed;
+    color: #168044;
+    border-color: #b8dfc4;
+}
+
+.hero-actions .btn-enquiry {
+    background: transparent;
+    color: var(--brown);
+}
+
+.hero-actions .btn:hover {
+    transform: translateY(-3px);
+    background: var(--gold);
+    color: white;
+    border-color: var(--gold);
+}
+
+@media(max-width: 600px) {
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-actions .btn {
+        justify-content: center;
+        width: 100%;
+    }
+}
 .social-links {
     display: flex;
     gap: 12px;
@@ -1667,10 +1713,23 @@ footer {
             across search engines and AI-powered platforms.
         </p>
 
-        <div class="actions">
-            <a class="btn" href="#projects">View My Work →</a>
-            <a class="link-btn" href="tel:+919625981144">Contact Me</a>
-        </div>
+      <div class="actions hero-actions">
+
+    <a class="btn" href="#projects">
+        Explore My Work <span>↗</span>
+    </a>
+
+    <a class="btn btn-whatsapp"
+       href="https://wa.me/919625981144?text=Hi%20Pooja,%20I%20want%20to%20connect."
+       target="_blank" rel="noopener">
+        WhatsApp <span>↗</span>
+    </a>
+
+    <a class="btn btn-enquiry" href="#contact-form">
+        Send an Enquiry <span>↗</span>
+    </a>
+
+</div>
 
         <div class="social-links">
             <a href="https://linkedin.com/in/pooja-verma-945539232/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
