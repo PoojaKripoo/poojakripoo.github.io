@@ -3051,7 +3051,7 @@ I offer Technical SEO, On-Page SEO, Off-Page SEO, Local SEO, SEO Audits, Keyword
         <p>Share your requirements and I'll get back to you.</p>
 
         <form class="contact-form"
-              action="https://formsubmit.co/pooja.kripoo@gmail.com"
+              action="https://formsubmit.co/ajax/pooja.kripoo@gmail.com"
               method="POST">
 
             <input type="hidden" name="_subject"
@@ -3183,7 +3183,44 @@ document.addEventListener("keydown", function(event) {
         document.body.classList.remove("enquiry-modal-open");
     }
 });
+/* AJAX FORM SUBMISSION */
 
+const enquiryForm = document.querySelector(".contact-form");
+
+enquiryForm.addEventListener("submit", async function(event) {
+    event.preventDefault();
+
+    const submitButton = enquiryForm.querySelector('button[type="submit"]');
+    const originalText = submitButton.textContent;
+
+    submitButton.disabled = true;
+    submitButton.textContent = "Sending...";
+
+    try {
+        const response = await fetch(enquiryForm.action, {
+            method: "POST",
+            body: new FormData(enquiryForm),
+            headers: {
+                "Accept": "application/json"
+            }
+        });
+
+        const result = await response.json();
+
+        if (response.ok && (result.success === "true" || result.success === true)) {
+            alert("Thank you! Your enquiry has been sent.");
+            enquiryForm.reset();
+        } else {
+            alert("Unable to send your enquiry. Please try again.");
+        }
+
+    } catch (error) {
+        alert("Network error. Please try again.");
+    } finally {
+        submitButton.disabled = false;
+        submitButton.textContent = originalText;
+    }
+});
 </script>
 
 </body>
