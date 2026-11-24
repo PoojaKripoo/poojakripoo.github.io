@@ -1080,6 +1080,542 @@ footer {
     }
 }
 
+/* =====================================
+   AI SEO EXPERTISE + AI RESULTS
+===================================== */
+
+.ai-expertise {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f8e8dc 0%, #fff8f1 55%, #f4dfd1 100%);
+}
+
+.ai-expertise:before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border: 1px solid #d9b99f;
+    border-radius: 50%;
+    right: -170px;
+    top: -190px;
+    opacity: .45;
+    pointer-events: none;
+}
+
+.ai-expertise-head {
+    display: grid;
+    grid-template-columns: 1fr .85fr;
+    gap: 7%;
+    align-items: end;
+    position: relative;
+    margin-bottom: 38px;
+}
+
+.ai-expertise-head .section-title {
+    margin-bottom: 0;
+    max-width: 650px;
+}
+
+.ai-expertise-head .section-intro {
+    padding-bottom: 5px;
+}
+
+.ai-expertise-head .section-title em {
+    color: var(--gold);
+}
+
+.ai-expertise-layout {
+    display: grid;
+    grid-template-columns: .82fr 1.18fr;
+    gap: 22px;
+    position: relative;
+}
+
+.ai-search-panel {
+    background: var(--brown);
+    color: #fff8f1;
+    border-radius: 14px;
+    padding: 30px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+}
+
+.ai-search-panel:after {
+    content: "AI";
+    position: absolute;
+    right: -5px;
+    bottom: 5px;
+    font: 800 150px/1 'Playfair Display';
+    color: rgba(255,255,255,.045);
+    pointer-events: none;
+}
+
+.ai-search-kicker {
+    color: #e5ad66;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.ai-search-panel h3 {
+    font: 700 30px/1.2 'Playfair Display';
+    margin: 24px 0 13px;
+    max-width: 330px;
+}
+
+.ai-search-panel p {
+    color: #e7d8ca;
+    font-size: 12px;
+    line-height: 1.9;
+    max-width: 340px;
+}
+
+.ai-search-flow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 28px;
+}
+
+.ai-search-flow span {
+    border: 1px solid #8e725d;
+    border-radius: 30px;
+    padding: 8px 11px;
+    font-size: 9px;
+    color: #fff2e4;
+}
+
+.ai-expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 13px;
+}
+
+.ai-expertise-card {
+    background: #fffaf5;
+    border: 1px solid var(--line);
+    border-radius: 11px;
+    padding: 21px;
+    min-height: 145px;
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.ai-expertise-card:hover {
+    transform: translateY(-4px);
+    border-color: #d6ad87;
+    box-shadow: 0 12px 25px #3b251914;
+}
+
+.ai-expertise-card .ai-card-no {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #f4e3d5;
+    color: #94612f;
+    font-size: 10px;
+    font-weight: 800;
+    margin-bottom: 17px;
+}
+
+.ai-expertise-card h3 {
+    font: 700 17px/1.3 'Playfair Display';
+    margin-bottom: 7px;
+}
+
+.ai-expertise-card p {
+    color: var(--muted);
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+.ai-expertise-note {
+    margin-top: 22px;
+    padding: 17px 20px;
+    border-left: 3px solid var(--gold);
+    background: rgba(255,250,245,.8);
+    color: #65554a;
+    font-size: 11px;
+    line-height: 1.8;
+    position: relative;
+}
+
+/* AI RESULTS HEADING */
+
+.ai-results-heading {
+    margin: 48px 0 8px;
+    padding-top: 30px;
+    border-top: 1px solid #dfc9b8;
+    position: relative;
+}
+
+.ai-results-heading h3 {
+    margin: 9px 0 8px;
+    font: 700 30px/1.2 'Playfair Display';
+    color: var(--brown);
+}
+
+.ai-results-heading h3 em {
+    color: var(--gold);
+}
+
+.ai-results-heading p {
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+/* AI GALLERY INTRO */
+
+.ai-gallery-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin: 32px 0 42px;
+    padding: 27px 30px;
+    background: #fffaf5;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+}
+
+.ai-gallery-kicker,
+.ai-platform-overline {
+    display: block;
+    color: #a17b58;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+}
+
+.ai-gallery-intro h3 {
+    margin: 10px 0;
+    font: 700 25px 'Playfair Display';
+}
+
+.ai-gallery-intro h3 em,
+.ai-platform-title h3 em {
+    color: var(--gold);
+}
+
+.ai-gallery-intro p {
+    max-width: 650px;
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.ai-platform-count {
+    flex: 0 0 105px;
+    text-align: center;
+    padding-left: 24px;
+    border-left: 1px solid var(--line);
+}
+
+.ai-platform-count strong {
+    display: block;
+    color: var(--gold);
+    font: 700 38px 'Playfair Display';
+}
+
+.ai-platform-count span {
+    color: var(--muted);
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* PLATFORM HEADINGS */
+
+.ai-platform-section {
+    margin-top: 38px;
+}
+
+.ai-platform-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 19px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dfc9b8;
+}
+
+.ai-platform-title {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.ai-platform-icon {
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.google-icon {
+    color: #4285f4;
+    background: #fff;
+    border: 1px solid #e6ddd3;
+}
+
+.chatgpt-icon {
+    color: #fff;
+    background: #173f35;
+    font-size: 20px;
+}
+
+.ai-platform-title h3 {
+    margin-top: 4px;
+    font: 700 25px 'Playfair Display';
+}
+
+.ai-gallery-label {
+    color: #92765f;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1.1px;
+}
+
+/* SCREENSHOT CARDS */
+
+.ai-screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.ai-shot-card {
+    min-width: 0;
+    overflow: hidden;
+    background: #fffaf5;
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    box-shadow: 0 8px 22px #3b25190a;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.ai-shot-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px #3b25191a;
+}
+
+.ai-shot-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 270px;
+    padding: 12px;
+    background: #eee8e1;
+    overflow: hidden;
+}
+
+.ai-shot-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.ai-shot-zoom {
+    position: absolute;
+    right: 20px;
+    bottom: 19px;
+    padding: 8px 11px;
+    border-radius: 20px;
+    background: #3b2519ef;
+    color: #fff;
+    font-size: 9px;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: .2s ease;
+}
+
+.ai-shot-image:hover .ai-shot-zoom,
+.ai-shot-image:focus-visible .ai-shot-zoom {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.ai-shot-card figcaption {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px 16px 17px;
+}
+
+.ai-shot-number {
+    color: #a17b58;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.ai-shot-card figcaption strong {
+    color: var(--brown);
+    font: 700 17px 'Playfair Display';
+}
+
+.ai-shot-card figcaption small {
+    color: var(--muted);
+    font-size: 10px;
+}
+
+/* EMPTY SCREENSHOT PLACEHOLDERS */
+
+.ai-shot-placeholder {
+    height: 270px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    background: linear-gradient(145deg, #fff3e8, #f2e4d8);
+    border-bottom: 1px dashed #d8bda7;
+}
+
+.ai-shot-placeholder .placeholder-mark {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: #fffaf5;
+    color: #9b6b43;
+    font-size: 25px;
+    font-weight: 700;
+    box-shadow: 0 5px 16px #3b25190d;
+}
+
+.ai-shot-placeholder strong {
+    color: var(--brown);
+    font: 700 17px 'Playfair Display';
+}
+
+.ai-shot-placeholder small {
+    color: var(--muted);
+    font-size: 10px;
+}
+
+.ai-empty-card {
+    border-style: dashed;
+}
+
+.chatgpt-gallery {
+    margin-top: 48px;
+}
+
+.ai-showcase-footnote {
+    margin-top: 28px;
+    padding-top: 16px;
+    border-top: 1px solid #dfc9b8;
+    color: var(--muted);
+    font-size: 10px;
+    line-height: 1.8;
+}
+
+.ai-showcase-footnote strong {
+    color: var(--brown);
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 850px) {
+    .ai-expertise-head,
+    .ai-expertise-layout {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .ai-search-panel {
+        min-height: 260px;
+    }
+}
+
+@media(max-width: 900px) {
+    .ai-screenshot-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media(max-width: 600px) {
+    .ai-expertise-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ai-expertise-card {
+        min-height: auto;
+    }
+
+    .ai-search-panel {
+        padding: 24px;
+    }
+
+    .ai-search-panel h3 {
+        font-size: 26px;
+    }
+
+    .ai-gallery-intro {
+        align-items: flex-start;
+        padding: 21px;
+    }
+
+    .ai-gallery-intro h3 {
+        font-size: 21px;
+    }
+
+    .ai-platform-count {
+        flex-basis: 70px;
+        padding-left: 13px;
+    }
+
+    .ai-platform-count strong {
+        font-size: 30px;
+    }
+
+    .ai-platform-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .ai-platform-title h3 {
+        font-size: 22px;
+    }
+
+    .ai-screenshot-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ai-shot-image {
+        height: 300px;
+    }
+
+    .ai-shot-placeholder {
+        height: 300px;
+    }
+
+    .ai-results-heading {
+        margin-top: 36px;
+    }
+}
+
 </style>
 </head>
 
@@ -1536,6 +2072,359 @@ footer {
 
   </div>
 </section>
+
+<!-- =====================================
+     AI SEO EXPERTISE + AI SEARCH RESULTS
+===================================== -->
+
+<section class="section ai-expertise" id="ai-results">
+
+    <span id="ai-seo" class="section-anchor"></span>
+
+    <div class="section-label">02 / AI SEO EXPERTISE</div>
+
+    <div class="ai-expertise-head">
+
+        <h2 class="section-title">
+            AI SEO Expert – <em>Optimising for the Future of Search.</em>
+        </h2>
+
+        <p class="section-intro">
+            I specialise in AI SEO strategies that help websites improve their visibility
+            across traditional search engines and emerging AI-powered search experiences.
+            My approach combines traditional SEO, Generative Engine Optimisation (GEO),
+            Answer Engine Optimisation (AEO), semantic SEO and content optimisation.
+        </p>
+
+    </div>
+
+    <div class="ai-expertise-layout">
+
+        <!-- SEARCH IS EVOLVING PANEL -->
+
+        <div class="ai-search-panel">
+
+            <div>
+                <div class="ai-search-kicker">SEARCH IS EVOLVING</div>
+
+                <h3>Be visible where people search, ask and discover.</h3>
+
+                <p>
+                    A connected approach to organic search and AI-powered discovery,
+                    built on useful content, clear structure and strong SEO fundamentals.
+                </p>
+            </div>
+
+            <div class="ai-search-flow">
+                <span>Traditional SEO</span>
+                <span>GEO</span>
+                <span>AEO</span>
+                <span>AI Search</span>
+            </div>
+
+        </div>
+
+        <!-- EXPERTISE CARDS -->
+
+        <div class="ai-expertise-grid">
+
+            <article class="ai-expertise-card">
+                <span class="ai-card-no">01</span>
+                <h3>AI-Powered Keyword Research</h3>
+                <p>Discover search themes, user intent and relevant keyword opportunities.</p>
+            </article>
+
+            <article class="ai-expertise-card">
+                <span class="ai-card-no">02</span>
+                <h3>Generative Engine Optimisation (GEO)</h3>
+                <p>Structure useful content for better understanding across generative search experiences.</p>
+            </article>
+
+            <article class="ai-expertise-card">
+                <span class="ai-card-no">03</span>
+                <h3>Answer Engine Optimisation (AEO)</h3>
+                <p>Create clear, relevant answers that address users’ questions and search needs.</p>
+            </article>
+
+            <article class="ai-expertise-card">
+                <span class="ai-card-no">04</span>
+                <h3>AI Search Visibility</h3>
+                <p>Strengthen content relevance and discoverability across AI-powered search platforms.</p>
+            </article>
+
+            <article class="ai-expertise-card">
+                <span class="ai-card-no">05</span>
+                <h3>Semantic SEO & Entity Optimisation</h3>
+                <p>Build meaningful connections between topics, entities and search intent.</p>
+            </article>
+
+            <article class="ai-expertise-card">
+                <span class="ai-card-no">06</span>
+                <h3>Structured Content & Topical Authority</h3>
+                <p>Organise content into clear topic clusters with helpful, connected information.</p>
+            </article>
+
+            <article class="ai-expertise-card">
+                <span class="ai-card-no">07</span>
+                <h3>AI Search Performance Analysis</h3>
+                <p>Review search visibility and identify opportunities for ongoing optimisation.</p>
+            </article>
+
+        </div>
+
+    </div>
+
+    <!-- MY APPROACH -->
+
+    <div class="ai-expertise-note">
+        <strong>My approach:</strong>
+        Combine proven SEO fundamentals with GEO, AEO and content strategies
+        to support visibility across an evolving search landscape.
+    </div>
+
+
+    <!-- AI SEARCH RESULTS -->
+
+    <div class="ai-results-heading">
+
+        <span class="ai-search-kicker">PROOF OF AI SEARCH VISIBILITY</span>
+
+        <h3>AI Search <em>Results & Visibility.</em></h3>
+
+        <p>
+            Examples of captured appearances across Google AI Overview and ChatGPT Search.
+        </p>
+
+    </div>
+
+    <h2 class="section-title">
+        My Presence Across <em>AI Search.</em>
+    </h2>
+
+    <p class="section-intro">
+        A visual collection of real AI search results and answer experiences
+        captured across Google AI Overview and ChatGPT.
+    </p>
+
+
+    <!-- GALLERY INTRO -->
+
+    <div class="ai-gallery-intro">
+
+        <div>
+            <span class="ai-gallery-kicker">AI VISIBILITY PROOF</span>
+
+            <h3>Real screenshots. <em>Real search experiences.</em></h3>
+
+            <p>
+                Explore the screenshots below to see how content appears across
+                AI-powered search platforms. Select any screenshot to view it larger.
+            </p>
+        </div>
+
+        <div class="ai-platform-count">
+            <strong>02</strong>
+            <span>AI PLATFORMS</span>
+        </div>
+
+    </div>
+
+
+    <!-- GOOGLE AI OVERVIEW -->
+
+    <div class="ai-platform-section">
+
+        <div class="ai-platform-heading">
+
+            <div class="ai-platform-title">
+
+                <span class="ai-platform-icon google-icon">G</span>
+
+                <div>
+                    <span class="ai-platform-overline">PLATFORM 01</span>
+                    <h3>Google <em>AI Overview</em></h3>
+                </div>
+
+            </div>
+
+            <span class="ai-gallery-label">SCREENSHOT GALLERY</span>
+
+        </div>
+
+
+        <div class="ai-screenshot-grid">
+
+            <!-- GOOGLE CARD 01 -->
+
+            <figure class="ai-shot-card">
+
+                <a class="ai-shot-image"
+                   href="AIresult.jpg"
+                   target="_blank"
+                   rel="noopener">
+
+                    <img src="AIresult.jpg"
+                         alt="Google AI Overview screenshot"
+                         loading="lazy">
+
+                    <span class="ai-shot-zoom">View screenshot ↗</span>
+
+                </a>
+
+                <figcaption>
+                    <span class="ai-shot-number">GOOGLE AI OVERVIEW / 01</span>
+                    <strong>KB Visa Dubai</strong>
+                    <small>AI Overview visibility</small>
+                </figcaption>
+
+            </figure>
+
+
+            <!-- GOOGLE CARD 02 -->
+
+            <figure class="ai-shot-card ai-empty-card">
+
+                <div class="ai-shot-placeholder">
+                    <span class="placeholder-mark">G</span>
+                    <strong>Google AI Overview</strong>
+                    <small>Add screenshot 02 here</small>
+                </div>
+
+                <figcaption>
+                    <span class="ai-shot-number">GOOGLE AI OVERVIEW / 02</span>
+                    <strong>Screenshot 02</strong>
+                    <small>Google AI Overview result</small>
+                </figcaption>
+
+            </figure>
+
+
+            <!-- GOOGLE CARD 03 -->
+
+            <figure class="ai-shot-card ai-empty-card">
+
+                <div class="ai-shot-placeholder">
+                    <span class="placeholder-mark">G</span>
+                    <strong>Google AI Overview</strong>
+                    <small>Add screenshot 03 here</small>
+                </div>
+
+                <figcaption>
+                    <span class="ai-shot-number">GOOGLE AI OVERVIEW / 03</span>
+                    <strong>Screenshot 03</strong>
+                    <small>Google AI Overview result</small>
+                </figcaption>
+
+            </figure>
+
+        </div>
+
+    </div>
+
+
+    <!-- CHATGPT SEARCH -->
+
+    <div class="ai-platform-section chatgpt-gallery">
+
+        <div class="ai-platform-heading">
+
+            <div class="ai-platform-title">
+
+                <span class="ai-platform-icon chatgpt-icon">✳</span>
+
+                <div>
+                    <span class="ai-platform-overline">PLATFORM 02</span>
+                    <h3>ChatGPT <em>Search</em></h3>
+                </div>
+
+            </div>
+
+            <span class="ai-gallery-label">SCREENSHOT GALLERY</span>
+
+        </div>
+
+
+        <div class="ai-screenshot-grid">
+
+            <!-- CHATGPT CARD 01 -->
+
+            <figure class="ai-shot-card">
+
+                <a class="ai-shot-image"
+                   href="ChatGPT-Result.png"
+                   target="_blank"
+                   rel="noopener">
+
+                    <img src="ChatGPT-Result.png"
+                         alt="ChatGPT search result screenshot"
+                         loading="lazy">
+
+                    <span class="ai-shot-zoom">View screenshot ↗</span>
+
+                </a>
+
+                <figcaption>
+                    <span class="ai-shot-number">CHATGPT / 01</span>
+                    <strong>KB Visa Dubai</strong>
+                    <small>AI answer / source mention</small>
+                </figcaption>
+
+            </figure>
+
+
+            <!-- CHATGPT CARD 02 -->
+
+            <figure class="ai-shot-card ai-empty-card">
+
+                <div class="ai-shot-placeholder">
+                    <span class="placeholder-mark">✳</span>
+                    <strong>ChatGPT Search</strong>
+                    <small>Add screenshot 02 here</small>
+                </div>
+
+                <figcaption>
+                    <span class="ai-shot-number">CHATGPT / 02</span>
+                    <strong>Screenshot 02</strong>
+                    <small>ChatGPT search result</small>
+                </figcaption>
+
+            </figure>
+
+
+            <!-- CHATGPT CARD 03 -->
+
+            <figure class="ai-shot-card ai-empty-card">
+
+                <div class="ai-shot-placeholder">
+                    <span class="placeholder-mark">✳</span>
+                    <strong>ChatGPT Search</strong>
+                    <small>Add screenshot 03 here</small>
+                </div>
+
+                <figcaption>
+                    <span class="ai-shot-number">CHATGPT / 03</span>
+                    <strong>Screenshot 03</strong>
+                    <small>ChatGPT search result</small>
+                </figcaption>
+
+            </figure>
+
+        </div>
+
+    </div>
+
+
+    <!-- EVIDENCE NOTE -->
+
+    <div class="ai-showcase-footnote">
+        <strong>Evidence note:</strong>
+        Screenshots show captured search experiences.
+        AI-generated results may vary by query, location, account and date.
+    </div>
+
+</section>
+
+<!-- END AI SEO SECTION -->
 
 <!-- SECTION 05: AI CASE STUDY -->
 
